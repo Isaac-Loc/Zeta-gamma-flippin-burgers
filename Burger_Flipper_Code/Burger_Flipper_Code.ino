@@ -40,7 +40,7 @@ void setup() {
 
 
 void loop() {
-  //1 is disconnected, 0 is connected
+  //1 is disconnected, 0 is connected 
   int value = digitalRead(pinReceiver); // receiver/detector send either LOW or HIGH (no analog values!)
   int value2 = digitalRead(pinReceiver2); // receiver/detector send either LOW or HIGH (no analog values!)
   int value3 = digitalRead(pinReceiver3); // receiver/detector send either LOW or HIGH (no analog values!)
