@@ -10,8 +10,8 @@ const int pinLaser3 = 16;
 const int pinReceiver3 = 20;
 
 
-const int pinLaser3 = 17;
-const int pinReceiver3 = 21;
+const int pinLaser4 = 17;
+const int pinReceiver4 = 21;
 
 
 void setup() {
