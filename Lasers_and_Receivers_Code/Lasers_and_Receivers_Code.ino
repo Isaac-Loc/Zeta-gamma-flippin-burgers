@@ -1,5 +1,5 @@
 const int pinLaser = 14; // output signal pin of laser module/laser pointer
-const int pinRececiver = 18; // input signal pin of receiver/detector (the used module does only return a digital state)
+const int pinReceiver = 18; // input signal pin of receiver/detector (the used module does only return a digital state)
 
 
 const int pinLaser2 = 15;
@@ -40,14 +40,15 @@ void setup() {
 
 
 void loop() {
+  //1 is disconnected, 0 is connected
   int value = digitalRead(pinReceiver); // receiver/detector send either LOW or HIGH (no analog values!)
   int value2 = digitalRead(pinReceiver2); // receiver/detector send either LOW or HIGH (no analog values!)
   int value3 = digitalRead(pinReceiver3); // receiver/detector send either LOW or HIGH (no analog values!)
   int value4 = digitalRead(pinReceiver4); // receiver/detector send either LOW or HIGH (no analog values!)
   Serial.print(value); // send value to console
   Serial.print(value2);
-  Serial.println(value3);
-  Serial.println(value4);
+  Serial.print(value3);
+  Serial.print(value4);
   delay(1000); // wait for 1000ms
 }
 
