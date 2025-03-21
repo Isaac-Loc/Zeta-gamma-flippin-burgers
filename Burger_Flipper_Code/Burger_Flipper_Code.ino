@@ -41,7 +41,7 @@ float Fahrenheit = 0.0;
 
 void setup() {
   // put your setup code here, to run once:
-  SpatulaServo.attach(9); //attach spatula servo to pin 6
+  SpatulaServo.attach(9); //attach spatula servo to pin 9
 
    // Initialize motor pins
   pinMode(ENA1, OUTPUT);  // Motor 1 speed control
